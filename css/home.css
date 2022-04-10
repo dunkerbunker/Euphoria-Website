@@ -1,0 +1,52 @@
+/*-----------
+home section
+------------*/
+.home-section{
+    position: relative;
+ }
+ .home-section .full-screen{
+    padding:50px 0;
+    min-height: 100vh;
+ }
+ .home-section .home-text,
+ .home-section .home-img{
+    flex:0 0 50%;
+    max-width: 50%;
+    padding:0 15px;
+ }
+ .home-section .home-text p{
+    color: var(--text-black-600);
+    font-size: 18px;
+    text-transform: capitalize;
+    margin:0;
+ }
+ 
+ .home-section .home-text h2{
+    font-size: 55px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    margin:0;
+ }
+ .home-section .home-text h1{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-black-600);
+    margin:0;
+    text-transform: capitalize;
+ }
+ .home-section .home-text .btn-1{
+    margin-top: 30px;
+ }
+ .home-section .home-img .img-box{
+    max-width: 900px;
+    display: block;
+    margin:auto;
+    border-radius: 50%;
+    padding: 15px;
+ }
+ .home-section .home-img .img-box img{
+    width: 100%;
+    border-radius: 100%;
+    border:10px solid transparent;
+ }
+

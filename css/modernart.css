@@ -1,0 +1,133 @@
+
+/* modernart Section */
+
+.modernart-section{
+	padding:80px 0 80px;
+    min-height: 100vh;
+}
+
+.modernart-section .modernart-item{
+	flex:0 0 33.33%;
+	max-width: 33.33%;
+	padding:15px;
+}
+.modernart-section .modernart-item-inner img{
+	width: 100%;
+	display: block;
+	transform: scale(1.1);
+	transition: all 0.5s ease;
+}
+.modernart-section .modernart-item-inner:hover img{
+	filter: grayscale(100%);
+	transform: scale(1);
+}
+.modernart-section .modernart-item-inner{
+	position: relative;
+	cursor: pointer;
+	overflow:hidden;
+}
+
+.modernart-section .modernart-item-inner .overlay{
+	position: absolute;
+	left:0;
+	top:0;
+	height: 100%;
+	width: 100%;
+	padding:15px;
+	display: flex;
+	align-items: flex-end;
+	transition: all 0.5s ease;
+	background-color: rgba(0,0,0,0.6);
+	opacity:0;
+}
+.modernart-section .modernart-item-inner:hover .overlay{
+	opacity:1;
+}
+.modernart-section .modernart-item-inner .overlay h4{
+	color:#ffffff;
+	font-size: 20px;
+	margin:0;
+	transform: translateX(30px);
+	transition: all 0.5s ease;
+}
+.modernart-section .modernart-item-inner:hover .overlay h4{
+	transform: translateX(0);
+}
+.modernart-section .modernart-content .intro{
+	font-size: 18px;
+	text-align: center;
+    font-weight: bold;
+    color: var(--text-black-900);
+    margin:0;
+}
+.modernart-section .modernart-item .art-info ul li{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--text-black-600);
+    font-size: 16px;
+	text-align: center;
+ }
+ .modernart-section .modernart-item .art-info ul li span{
+    font-weight: 400;
+ }
+
+
+/* lightbox */
+.lightbox{
+	position: fixed;
+	z-index: 1099;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	background-color: rgba(0,0,0,0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: zoom-out;
+	display: none;
+}
+.lightbox.open{
+	display: flex;
+}
+
+.lightbox .lightbox-img{
+	display: flex;
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	padding:40px 0;
+}
+.lightbox .img-box{
+	position: relative;
+	cursor: auto;
+}
+.lightbox .lightbox-close{
+	height: 30px;
+	width: 30px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top:10px;
+	font-size: 30px;
+	color:#ffffff;
+	text-align: center;
+	line-height: 26px;
+	cursor: zoom-out;
+}
+.lightbox .lightbox-caption{
+	color:#ffffff;
+	font-size: 16px;
+	font-weight: 600;
+	position: absolute;
+	left:0;
+	bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.lightbox .lightbox-caption .lightbox-category{
+	padding-right: 50px;
+}

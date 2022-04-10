@@ -1,0 +1,105 @@
+/* streetart section*/
+
+.streetart-section{
+    padding:80px 0 80px;
+    min-height: 100vh;
+ }
+ .streetart-section .section-title{
+	margin-bottom: 40px;
+ }
+.streetart-section .streetart-content{
+	flex:0 0 100%;
+	max-width: 100%;
+	position: relative;
+}
+.streetart-section .streetart-content:before{
+	content: '';
+	position: absolute;
+	left:50%;
+	width: 1px;
+	height: 100%;
+	top: 160px;
+	background-color: #cccccc;
+}
+.streetart-section .streetart-item i{
+	position: absolute;
+	left:50%;
+	margin-left: -15px;
+	top:5px;
+	width: 31px;
+	text-align: center;
+	background-color: #f3f2f1;
+	padding:5px;
+	font-size: 18px;
+}
+.streetart-section .streetart-item{
+	display: flex;
+	flex-wrap: wrap;
+	flex:0 0 100%;
+	max-width: 100%;
+	margin-bottom: 50px;
+	position: relative;
+}
+.streetart-section .streetart-item:last-child{
+	margin-bottom: 0;
+}
+.streetart-section .streetart-item:nth-child(even){
+	flex-direction: row-reverse;
+}
+.streetart-section .streetart-item:nth-child(odd) .streetart-text{
+	padding:0 60px 0 15px;
+	text-align: right;
+}
+.streetart-section .streetart-item:nth-child(odd) .streetart-img{
+	padding:0 15px 0 60px;
+}
+.streetart-section .streetart-item:nth-child(even) .streetart-text{
+	padding:0 15px 0 60px;
+}
+.streetart-section .streetart-item:nth-child(even) .streetart-img{
+	padding:0 60px 0 15px;
+}
+.streetart-section .streetart-text,
+.streetart-section .streetart-img{
+	flex:0 0 50%;
+	max-width: 50%;
+}
+.streetart-section .streetart-img img{
+	width: 100%;
+	border-radius: 5px;
+}
+.streetart-section .streetart-text h3{
+	font-size: 35px;
+    font-weight: 700;
+    color: var(--skin-color);
+    margin:0;
+}
+.streetart-section .streetart-text span.location{
+	font-size: 15px;
+    font-weight: 500;
+    color: var(--text-black-600);
+    margin:0;
+    text-transform: capitalize;
+}
+.streetart-section .streetart-text span.artist{
+	font-size: 15px;
+    font-weight: 500;
+    color: var(--text-black-900);
+    margin:0;
+    text-transform: capitalize;
+}
+.streetart-section .streetart-text p{
+    color: var(--text-black-600);
+    font-size: 14px;
+    text-transform: capitalize;
+    margin:0;
+}
+.streetart-section .streetart-content .intro{
+	font-size: 18px;
+	text-align: center;
+    font-weight: bold;
+    color: var(--text-black-900);
+    margin:0;
+}
+
+

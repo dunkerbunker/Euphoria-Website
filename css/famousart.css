@@ -1,0 +1,288 @@
+/*----------------- 
+art section 
+---------------------*/
+.art-section{
+    padding:80px 0 80px;
+    min-height: 100vh;
+ }
+ .art-section .section-title{
+    margin-bottom: 40px;
+ }
+ .art-section .art-filter{
+    padding:0 15px;
+    flex:0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+ }
+ .art-section .filter-item{
+    display: inline-block;
+    margin:0 5px 10px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--text-black-600);
+    text-transform: capitalize;
+    font-size: 16px;
+    transition: all 0.3s ease;
+ }
+ .art-section .filter-item:hover:not(.active){
+    opacity: 0.6;
+ }
+ .art-section .filter-item.active{
+    color: var(--skin-color);
+ }
+ .art-section .art-item{
+    flex:0 0 33.33%;
+    max-width: 33.33%;
+    padding:15px;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .art-section .art-item.hide{
+    display: none;
+ }
+ .art-section .art-item.show{
+    display: block;
+    animation: fadeInTop 0.5s ease;
+ }
+ .art-section .art-item-inner{
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+ }
+ .art-section .art-item-img img{
+    border-radius: 5px;
+    width: 100%;
+    transition: all 0.3s ease;
+ }
+ .art-section .art-item-inner:hover .art-item-img img{
+    transform: translateY(-25px);
+ }
+ .art-section .art-item-img{
+    position: relative;
+ }
+ .art-section .art-item-img .view-project{
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--skin-color);
+    transition: all 0.3s ease;
+    position: absolute;
+    left:0;
+    bottom:-4px;
+    transform: translateY(-5px);
+    z-index: -1;
+    opacity:0;
+ }
+ .art-section .art-item-inner:hover .view-project{
+    transform: translateY(0px);
+    opacity:1;
+ }
+ .art-section .art-item-details{
+    display: none;
+ }
+ .art-section .art-item-inner p{
+    font-size: 16px;
+    margin:10px 0 0;
+    color: var(--text-black-600);
+    text-transform: capitalize;
+ }
+ 
+ /*---------------
+  art popup
+  -----------------*/
+ .art-popup{
+    background-color: var(--bg-black-50);
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow-y: scroll;
+    opacity:0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+ }
+ .art-popup.open{
+    visibility: visible;
+    opacity: 1;
+ }
+ .art-popup .pp-loader{
+    position: fixed;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    z-index: 1005;
+    background-color: var(--bg-opacity);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity:0;
+ }
+ .art-popup .pp-loader.active{
+    visibility: visible;
+    opacity:1;
+ }
+ .art-popup .pp-loader div{
+    height: 40px;
+    width: 40px;
+    border:3px solid var(--skin-color);
+    border-radius: 50%;
+    border-right: 3px solid transparent;
+    animation: spin 2s linear infinite;
+ }
+ .art-popup .pp-details{
+    max-width: 1350px;
+    margin:auto;
+    max-height: 0;
+    overflow: hidden;
+    opacity:0;
+    transition: all 0.5s ease;
+ }
+ .art-popup .pp-details.active{
+    opacity:1;
+ }
+ .art-popup .pp-details-inner{
+    padding:30px 0;
+ }
+ .art-popup .pp-title{
+    padding:0 15px;
+ }
+ .art-popup .pp-title h2{
+    font-size: 28px;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    font-weight: 600;
+    margin:0 0 5px;
+ }
+ .art-popup .pp-title p{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-black-600);
+    margin:0 0 15px;
+    border-bottom: 1px solid var(--bg-black-100);
+    padding-bottom: 10px;
+ }
+ .art-popup .pp-title p span{
+    font-weight: 400;
+    text-transform: capitalize;
+ }
+ .art-popup .pp-project-details h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-black-700);
+    margin:0 0 15px;
+    text-transform: capitalize;
+ }
+ .art-popup .description{
+    flex:0 0 65%;
+    max-width: 65%;
+    padding:0 15px;
+ }
+ .art-popup .description p{
+    font-size: 16px;
+    color: var(--text-black-600);
+    line-height: 26px;
+    margin:0;
+ }
+ .art-popup .info{
+    flex:0 0 35%;
+    max-width: 35%;
+    padding:0 15px;
+ }
+ .art-popup .info ul li{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--text-black-600);
+    font-size: 16px;
+ }
+ .art-popup .info ul li span{
+    font-weight: 400;
+ }
+ .art-popup .info ul li a{
+    color: var(--skin-color);
+ }
+ .art-popup .info ul li:last-child{
+    margin-bottom:0;
+ 
+ }
+ .art-popup .separator{
+    height: 1px;
+    width: 100%;
+    display: block;
+    background-color: var(--bg-black-100);
+ }
+ .art-popup .pp-img{
+    max-width:100%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+ }
+ .art-popup .pp-main{
+    min-height: 100vh;
+    max-width: 1350px;
+    width: 85%;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .art-popup .pp-main-inner{
+    padding:70px 0 50px;
+    position: relative;
+ }
+ .art-popup .pp-project-details-btn{
+    position: absolute;
+    left:0;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--skin-color);
+    top:15px;
+    cursor: pointer;
+    padding:0 15px;
+    height: 40px;
+    line-height: 40px;
+    transition: all 0.3s ease;
+ }
+ .art-popup .pp-project-details-btn i{
+    margin-left: 4px;
+ }
+ .art-popup .pp-project-details-btn:after{
+    border-radius: 30px;
+ }
+ .art-popup .pp-close{
+    position: absolute;
+    right:0;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    top:15px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 35px;
+    color: var(--text-black-600);
+    cursor: pointer;
+    transition: all 0.3s ease;
+ }
+ .art-popup .pp-close:after{
+    border-radius: 50%;
+ }
+ .art-popup .pp-counter{
+    position: absolute;
+    right: 0;
+    height: 40px;
+    line-height: 40px;
+    bottom: 5px;
+    font-size: 16px;
+    color: var(--text-black-600);
+ }
+

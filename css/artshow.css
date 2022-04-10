@@ -1,0 +1,166 @@
+/* --------------------
+ show section 
+ --------------------*/
+ .show-section{
+    padding:80px 0 80px;
+    min-height: 125vh;
+}
+ .show-section .section-title{
+	margin-bottom: 40px;
+ }
+.show-text,
+.show-img{
+    width: 50%;
+    padding:0 15px;
+}
+.show-text h3{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin:0 0 15px;
+    font-weight: bold;
+    color: var(--text-black-900);
+}
+.show-text p{
+    margin:0 0 15px;
+    text-align: justify;
+    color: var(--text-black-600);
+}
+.show-text i{
+    color: var(--skin-color);
+}
+.show-img img{
+    width: 100%;
+    border-radius: 15px;
+}
+.show-img .img-box{
+    position: relative;
+}
+
+.show-text2,
+.show-img2{
+    top: 100px;
+    width: 50%;
+    padding:0 15px;
+}
+.show-text2{
+    left: 40px;
+    position: relative;
+}
+.show-text2 h3{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin:0 0 15px;
+    font-weight: bold;
+    color: var(--text-black-900);
+}
+.show-text2 p{
+    margin:0 0 15px;
+    text-align: justify;
+    color: var(--text-black-600);
+}
+.show-text2 i{
+    color: gold;
+}
+.show-img2 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.show-img2 .img-box{
+    top: 80px;
+    position: relative;
+}
+
+
+/* ---------------------
+ feedback section 
+ ----------------------*/
+ .section-title h1{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--skin-color);
+    text-transform: uppercase;
+    margin:0;
+ }
+ .feedback-section{
+    background-color: var(--dark);
+    padding-bottom: 50px;
+}
+.feedback-item{
+    width: calc((100% / 3) - 30px);
+    margin:0 15px 30px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--outer-shadow);
+}
+.feedback-author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feedback-author h3{
+    font-size: 16px;
+    text-transform: capitalize;
+    margin:0 0 3px;
+    color: var(--text-black-900);
+    font-weight: 600;
+}
+.feedback-author span{
+    display: block;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: var(--text-black-600);
+}
+.feedback-author img{
+    max-width: 60px;
+    border-radius: 50%;
+    box-shadow: var(--outer-shadow);
+}
+.feedback-item p{
+    margin: 15px 0;
+    color: var(--text-black-600);
+}
+.feedback-item .ratings i{
+    font-size: 16px;
+    color: #eaa023;
+}
+
+
+/* ---------------------
+ FAQ section 
+ ----------------------*/
+ .wrapper{
+    background-color: var(--dark);
+    margin-bottom: 20px;
+    padding: 15px 40px;
+    border-radius: 5px;
+    box-shadow: var(--outer-shadow);
+}
+.toggle,
+.content{
+    font-family: "Poppins",sans-serif;
+}
+.toggle{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: var(--text-black-900);
+    font-weight: 500;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 0;
+}
+.content{
+    position: relative;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 30px;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    color: var(--text-black-600);
+}

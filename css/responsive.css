@@ -1,0 +1,114 @@
+@media(max-width: 991px){
+	.art-section .art-item{
+		flex: 0 0 50%;
+        max-width: 50%;
+	}
+	.artists-section .artists-item{
+		width: 50%;
+	}
+	.artists-item:not(:last-child){
+		margin-bottom: 75px;
+	}
+	.feedback-item{
+        width: calc(50% - 30px);
+    }
+}
+
+
+@media(max-width: 767px){
+	.contact-section .w-50,
+	.contact-section .contact-item,
+	.service-section .service-item,
+	.about-section .about-info,
+	.about-section .about-img,
+	.home-section .home-text, 
+	.home-section .home-img{
+		flex: 0 0 100%;
+        max-width: 100%;
+	}
+	.home-section .home-text{
+		order: 2;
+	}
+	.contact-section .submit-btn,
+	.home-section .home-text{
+		text-align: center;
+	}
+	.home-section .full-screen{
+		padding: 100px 0;
+	}
+	.home-section .home-img .img-box{
+		margin-bottom: 40px;
+		max-width: 350px;
+	}
+	.effect-3{
+		margin-left: -60px;
+	}
+	.effect-4{
+		left: 15%;
+	}
+	.effect-5{
+		right: 4%;
+	}
+	.about-section .about-img{
+		padding-bottom: 30px;
+	}
+	.streetart-section .streetart-img{
+		margin-top: 20px;
+	}
+	.streetart-section .streetart-content:before{
+		left: 20px;
+	}
+	.streetart-section .streetart-item i{
+		margin-left:0px;
+        left:5px;
+	}
+	.event-section .event-item ,
+	.streetart-section .streetart-text, .streetart-section .streetart-img {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .streetart-section .streetart-item:nth-child(odd) .streetart-text {
+    padding: 0 15px 0 50px;
+    text-align: left;
+    }
+   .streetart-section .streetart-item:nth-child(even) .streetart-img {
+    padding: 0 15px 0 50px;
+   }
+   .streetart-section .streetart-item:nth-child(even) .streetart-text,
+   .streetart-section .streetart-item:nth-child(odd) .streetart-img {
+    padding: 0 15px 0 50px;
+   }
+	.show-text, 
+	.show-img,
+	.show-text2, 
+	.show-img2{
+		width: 100%;
+		left: -0.1px;
+	}
+	.show-text h3,
+	.show-text2 h3{
+		font-size: 24px;
+	}
+	.feedback-item{
+        width: calc(100% - 30px);
+    }
+
+}
+
+@media(max-width: 574px){
+	.home-section .home-img .img-box{
+		max-width: 260px;
+	}
+    .home-section .home-text h2{
+    	font-size: 40px;
+    }
+}
+@media(max-width:575px){
+    .artists-item{
+        width: 100%;
+    }
+}
+
+
+
+
